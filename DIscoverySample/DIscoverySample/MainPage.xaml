@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="DIscoverySample.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:DIscoverySample.Views"
+    Padding="10"
+    BackgroundColor="#F5F5F5"
+    BarBackgroundColor="White">
+
+    <NavigationPage.TitleView>
+        <Label
+            Style="{StaticResource TitleLabelStyle}"
+            Text="Discovery"/>
+
+    </NavigationPage.TitleView>
+   
+    <TabbedPage.Children>
+        
+        <pages:HomePage Title="Home" IconImageSource="homepage.png" />
+        <pages:DiscoveryPage Title="Discovery" IconImageSource="discovery.png" />
+        <pages:BookmarkPage Title="Bookmark" IconImageSource="bookmarkIcon.png" />
+        <pages:TopFoodiePage Title="Top Foodie Page" IconImageSource="trofyIcon.png" />
+        <pages:ProfilePage Title="Profile" IconImageSource="profileIcon.png" />
+
+    </TabbedPage.Children>
+
+</TabbedPage>
